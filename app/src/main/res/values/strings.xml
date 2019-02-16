@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AngleCalculator</string>
+    <string name="adjacent_text">adjacent</string>
+    <string name="opposite_text">opposite</string>
+    <string name="hypotenuse_text">hypotenuse</string>
+    <string name="alpha_text">alpha</string>
+</resources>

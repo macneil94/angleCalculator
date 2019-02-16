@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/adjacent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/adjacent_text"
+        app:layout_constraintBottom_toTopOf="@+id/opposite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/opposite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="@string/opposite_text"
+        app:layout_constraintBottom_toTopOf="@+id/hypotenuse"
+        app:layout_constraintStart_toStartOf="@+id/adjacent"
+        app:layout_constraintTop_toBottomOf="@+id/adjacent" />
+
+    <TextView
+        android:id="@+id/hypotenuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="@string/hypotenuse_text"
+        app:layout_constraintBottom_toTopOf="@+id/alpha"
+        app:layout_constraintStart_toStartOf="@+id/opposite"
+        app:layout_constraintTop_toBottomOf="@+id/opposite" />
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/alpha_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/hypotenuse"
+        app:layout_constraintTop_toBottomOf="@+id/hypotenuse" />
+</android.support.constraint.ConstraintLayout>
