@@ -23,45 +23,43 @@
         android:id="@+id/a_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginBottom="2dp"
-        android:text="a"
-        app:layout_constraintBottom_toTopOf="@+id/b_editText"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/a_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/a_editText"
+        app:layout_constraintEnd_toStartOf="@+id/a_editText" />
 
     <TextView
         android:id="@+id/b_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="31dp"
-        android:text="b"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/a_text" />
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/b_text"
+        app:layout_constraintBottom_toBottomOf="@+id/b_editText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/c_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="31dp"
-        android:text="c"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_text" />
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/c_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/d_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="31dp"
-        android:text="d"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c_text" />
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:text="@string/d_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/d_editText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/a_editText"
@@ -71,8 +69,8 @@
         android:inputType="textPersonName"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/a_sizeText"
-        app:layout_constraintEnd_toEndOf="@+id/b_editText"
-        app:layout_constraintStart_toStartOf="@+id/b_editText"
+        app:layout_constraintEnd_toEndOf="@+id/d_editText"
+        app:layout_constraintStart_toStartOf="@+id/d_editText"
         app:layout_constraintTop_toTopOf="@+id/a_sizeText" />
 
     <EditText
@@ -83,83 +81,84 @@
         android:inputType="textPersonName"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/b_sizeText"
-        app:layout_constraintEnd_toEndOf="@+id/c_editText"
-        app:layout_constraintStart_toStartOf="@+id/c_editText"
+        app:layout_constraintEnd_toEndOf="@+id/d_editText"
+        app:layout_constraintStart_toStartOf="@+id/d_editText"
         app:layout_constraintTop_toTopOf="@+id/b_sizeText" />
 
     <EditText
         android:id="@+id/c_editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/c_sizeText"
-        app:layout_constraintEnd_toEndOf="@+id/d_editText"
-        app:layout_constraintStart_toStartOf="@+id/d_editText"
-        app:layout_constraintTop_toTopOf="@+id/c_sizeText" />
+        app:layout_constraintEnd_toEndOf="@+id/b_editText"
+        app:layout_constraintStart_toStartOf="@+id/b_editText"
+        app:layout_constraintTop_toBottomOf="@+id/b_editText" />
 
     <EditText
         android:id="@+id/d_editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginLeft="47dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/d_sizeText"
-        app:layout_constraintEnd_toEndOf="@+id/c_sizeText"
-        app:layout_constraintStart_toStartOf="@+id/d_text"
-        app:layout_constraintTop_toTopOf="@+id/d_sizeText" />
+        app:layout_constraintBottom_toTopOf="@+id/b_editText"
+        app:layout_constraintEnd_toStartOf="@+id/d_sizeText"
+        app:layout_constraintStart_toEndOf="@+id/d_text" />
 
     <TextView
         android:id="@+id/a_sizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:text="mm"
-        app:layout_constraintBottom_toTopOf="@+id/b_editText"
-        app:layout_constraintStart_toStartOf="@+id/b_sizeText" />
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/a_sizeText"
+        app:layout_constraintBottom_toTopOf="@+id/d_editText"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/b_sizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:text="mm"
-        app:layout_constraintBottom_toTopOf="@+id/c_editText"
+        android:layout_marginBottom="24dp"
+        android:text="@string/b_sizeText"
+        app:layout_constraintBottom_toTopOf="@+id/c_sizeText"
         app:layout_constraintStart_toStartOf="@+id/c_sizeText" />
 
     <TextView
         android:id="@+id/c_sizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
-        android:layout_marginBottom="9dp"
-        android:text="mm"
-        app:layout_constraintBottom_toTopOf="@+id/d_editText"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/c_sizeText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c_editText" />
 
     <TextView
         android:id="@+id/d_sizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="99dp"
-        android:text="degrees"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/c_sizeText"
-        app:layout_constraintStart_toEndOf="@+id/c_sizeText" />
+        android:text="@string/d_sizeText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/d_editText"
+        app:layout_constraintEnd_toEndOf="@+id/a_sizeText"
+        app:layout_constraintStart_toEndOf="@+id/a_sizeText" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="calcAngle"
-        android:text="Button"
+        android:text="@string/button_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

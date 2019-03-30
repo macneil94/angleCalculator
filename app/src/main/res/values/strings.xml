@@ -4,4 +4,13 @@
     <string name="opposite_text">a</string>
     <string name="hypotenuse_text">b</string>
     <string name="alpha_text">c</string>
+    <string name="a_text">width (a)</string>
+    <string name="b_text">backcut (b)</string>
+    <string name="c_text">cutlength (c)</string>
+    <string name="d_text">angle (d)</string>
+    <string name="a_sizeText">mm</string>
+    <string name="b_sizeText">mm</string>
+    <string name="c_sizeText">mm</string>
+    <string name="d_sizeText">degrees</string>
+    <string name="button_text">calculate</string>
 </resources>
