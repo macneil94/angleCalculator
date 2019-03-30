@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         aEditText = findViewById(R.id.a_editText); // a - width
-        bEditText = findViewById(R.id.b_editText);
-        cEditText = findViewById(R.id.c_editText);
+        bEditText = findViewById(R.id.b_editText); // b - backcut
+        cEditText = findViewById(R.id.c_editText); // c - cutlength
         dEditText = findViewById(R.id.d_editText); // d - angle
     }
 
@@ -51,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
     public double calc_backcut(double a, double d) {
         d = Math.toRadians(d);
 
-        double tanD = Math.tan(d);
+        double tan_d = Math.tan(d);
 
-        return a / tanD;
+        return a / tan_d;
     }
 
     //  c - cutlength
     public double calc_cutlength(double a, double d) {
         d = Math.toRadians(d);
 
-        double sinD = Math.sin(d);
+        double sin_d = Math.sin(d);
 
-        return a / sinD;
+        return a / sin_d;
     }
 }
